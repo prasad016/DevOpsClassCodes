@@ -31,7 +31,7 @@ jobs:
       run: mvn -B package --file pom.xml
 
     - name: Upload a Build Artifact
-      uses: actions/upload-artifact@v4.6
+      uses: actions/upload-artifact@v4
       with:
         name: address-war
         path: target/addressbook.war
